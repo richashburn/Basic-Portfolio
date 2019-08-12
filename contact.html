@@ -5,38 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="ie-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Rich Ashburn Portfolio</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="assets/css/style.css" />   
-</head>
+
+  </head>
 <body>
-    <div>
-    <H1>Rich Ashburn</H1>
-    <a href="index.html">About</a>
-    <a href="portfolio.html">Portfolio<a>
-    <a href="">Contact<a>
+    <header id="masthead">
+        <div class="container">
+                <a href="index.html" id="logo">Rich Ashburn</a>
+                <nav>
+                        <a href="index.html">About</a> 
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="contact.html">Contact</a>
+                </nav>   
+            
+        </div>
+    </header>
 <!-- End of header -->
-<body>
-        <h1>Contact</h1>
 
-        <h2>Text Input</h2>
+<div id="main-container" class="container">
+    <section class="main-container">        
+    <H1>Contact</H1>
+          
+    <form id="contact-form">
+        <ul>
+          <li>
+              <label for="name">Name</label> <br>
+              <input type="text" name="name" id="name" 
+              placeholder="John Smith"
+              required="required">
+          </li>
 
-        <form>
-          Name:<br>
-          <input type="text" name="Name">
-          <br>
-          Email:<br>
-          <input type="text" name="Email">
-          <br>
-            Message:<br>
-            <input type="text" name="Message">
-            <br>
-            <br>
-  <input type="submit" value="Submit">
-        </form> 
+          <li>
+              <label for="email">Email</label> <br>
+              <input type="text" name="email" id="email" 
+              placeholder="johnsmith@gmail.com"
+              required="required">
+          </li>
 
-        <footer>
+          <li>
+              <label for="message">Message</label> <br>
+              <textarea id="message" name="message" 
+              required="required"></textarea>
+          </li>
+        </ul>
+
+        <input type="submit" name="submit">
+        </form>
+            </section>
+    
+            
+            </div>
+            <footer>
                 <div class="container">
-                  <p>&copy; Ashburn 2019</p>
+                  &copy; Ashburn 2019
                 </div>
         </footer>
-        
+
 </body>
+
+
